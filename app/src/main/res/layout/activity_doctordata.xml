@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".doctordata">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/doc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Dr. Prafull Chabra"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/calldoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="20dp"
+                android:onClick="calldoc1"
+                android:text="CALL"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/locdoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="120dp"
+                android:onClick="locatedoc1"
+                android:text="LOCATE"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/appointmentdoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:onClick="bookdoc1"
+                android:text="BOOK APPOINTMENT"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/doc1degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="MBBS"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc1" />
+
+            <TextView
+                android:id="@+id/doc1exp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Experience:- 20 years"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/doc1degree"
+                app:layout_constraintTop_toBottomOf="@id/doc1" />
+
+            <TextView
+                android:id="@+id/doc1add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Vaishali Nagar, Jaipur"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc1degree" />
+
+            <TextView
+                android:id="@+id/doc1fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginRight="20dp"
+
+                android:text="Fee: Rs.200"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/availbledoc1"
+                android:layout_marginRight="110dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="Available:"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/doc1hosp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/availabledoc1start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="90dp"
+                app:layout_constraintStart_toEndOf="@+id/availbledoc1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:layout_marginRight="85dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/availabledoc1end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="12"
+                android:textSize="20sp"
+                android:layout_marginRight="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/doc1hosp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Apollo Hospital"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc1add" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="200dp"
+                android:background="#DCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/doc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Dr. Satish Jain"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <Button
+                android:id="@+id/calldoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="20dp"
+                android:onClick="calldoc2"
+                android:text="CALL"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/doc2" />
+            <Button
+                android:id="@+id/appointmentdoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:onClick="bookdoc1"
+                android:text="BOOK APPOINTMENT"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <Button
+                android:id="@+id/locdoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="120dp"
+                android:onClick="locatedoc2"
+                android:text="LOCATE"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/doc2" />
+
+            <TextView
+                android:id="@+id/doc2degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="MBBS"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc2" />
+
+            <TextView
+                android:id="@+id/doc2exp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Experience:- 30 years"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/doc2degree"
+                app:layout_constraintTop_toBottomOf="@id/doc2" />
+
+            <TextView
+                android:id="@+id/doc2fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginRight="20dp"
+                android:text="Fee: Rs.300"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/availbledoc2"
+                android:layout_marginRight="130dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="Available:"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view"
+                />
+
+            <TextView
+                android:id="@+id/availabledoc2start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintStart_toEndOf="@+id/availbledoc1"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:layout_marginRight="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <TextView
+                android:id="@+id/availabledoc2end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="15"
+                android:textSize="20sp"
+                android:layout_marginRight="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <TextView
+                android:id="@+id/doc2add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Jhotwara, Jaipur"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc2degree" />
+
+            <TextView
+                android:id="@+id/doc2hosp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Max Hospital"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc2add" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="200dp"
+                android:background="#DCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <TextView
+                android:id="@+id/doc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Dr. Neetu Pareek"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <Button
+                android:id="@+id/calldoc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="20dp"
+                android:onClick="calldoc1"
+                android:text="CALL"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+            <Button
+                android:id="@+id/appointmentdoc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:onClick="bookdoc1"
+                android:text="BOOK APPOINTMENT"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <Button
+                android:id="@+id/locdoc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="120dp"
+                android:onClick="locatedoc1"
+                android:text="LOCATE"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/doc3degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="MBBS"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc3" />
+
+            <TextView
+                android:id="@+id/doc3fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginRight="20dp"
+                android:text="Fee: Rs.250"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/availbledoc3"
+                android:layout_marginRight="80dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="Available: "
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1"
+                />
+
+            <TextView
+                android:id="@+id/availabledoc3start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintStart_toEndOf="@+id/availbledoc1"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:layout_marginRight="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/availabledoc3end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="23"
+                android:textSize="20sp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/doc3exp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Experience:- 15 years"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/doc3degree"
+                app:layout_constraintTop_toBottomOf="@id/doc3" />
+
+            <TextView
+                android:id="@+id/doc3add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Sirsi Road, Jaipur"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc3degree" />
+
+            <TextView
+                android:id="@+id/doc3hosp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Royal Green Hospital"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc3add" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="200dp"
+                android:background="#DCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/doc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Dr. Himani Goyal"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+
+            <Button
+                android:id="@+id/appointmentdoc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:onClick="bookdoc1"
+                android:text="BOOK APPOINTMENT"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+
+            <TextView
+                android:id="@+id/doc4fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginRight="20dp"
+                android:text="Fee: Rs.500"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <Button
+                android:id="@+id/calldoc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="20dp"
+                android:onClick="calldoc2"
+                android:text="CALL"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+
+            <Button
+                android:id="@+id/locdoc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="130dp"
+                android:onClick="locatedoc3"
+                android:text="LOCATE"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+
+            <TextView
+                android:id="@+id/doc4degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="MBBS"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc4" />
+
+            <TextView
+                android:id="@+id/doc4exp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Experience:- 25 years"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/doc4degree"
+                app:layout_constraintTop_toBottomOf="@id/doc4" />
+
+            <TextView
+                android:id="@+id/doc4add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Sitapura, Jaipur"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc4degree" />
+
+            <TextView
+                android:id="@+id/doc4hosp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Mahatma Gandhi Hospital"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc4add" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="200dp"
+                android:background="#DCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+
+            <TextView
+                android:id="@+id/doc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Dr. J.J Gupta"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view3" />
+            <Button
+                android:id="@+id/appointmentdoc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:onClick="bookdoc1"
+                android:text="BOOK APPOINTMENT"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view3" />
+
+            <TextView
+                android:id="@+id/doc5fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginRight="20dp"
+                android:text="Fee: Rs.400"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+
+            <Button
+                android:id="@+id/calldoc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="20dp"
+                android:onClick="calldoc3"
+                android:text="CALL"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view3" />
+
+            <Button
+                android:id="@+id/locdoc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="130dp"
+                android:onClick="locatedoc3"
+                android:text="LOCATE"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view3" />
+
+            <TextView
+                android:id="@+id/doc5degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="MBBS"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc5" />
+
+            <TextView
+                android:id="@+id/doc5exp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Experience:- 50 years"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/doc5degree"
+                app:layout_constraintTop_toBottomOf="@id/doc5" />
+
+            <TextView
+                android:id="@+id/doc5add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="C-Scheme, Jaipur"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc5degree" />
+
+            <TextView
+                android:id="@+id/doc5hosp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="City Hospital"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doc5add" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="200dp"
+                android:background="#DCDCDC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

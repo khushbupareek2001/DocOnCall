@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+
+    tools:context=".Alarm">
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tp"
+        android:text="Schedule a Medications"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/stop_alarm"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/stop_alarm"
+        android:layout_below="@id/tp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/set_alarm"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/start_alarm"
+        android:layout_below="@id/tp"
+        android:layout_alignRight="@id/tp"
+        android:layout_alignEnd="@id/tp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/set_the_daily_time_of_your_medicine"
+        android:id="@+id/update_text"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/start_alarm"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

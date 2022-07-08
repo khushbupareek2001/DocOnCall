@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".emergency">
+
+    <Button
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#D30829"
+        android:onClick="nearhosp"
+        android:padding="15dp"
+        android:text="@string/hospitals_near_by_me"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_location_on_24" />
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/em"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/emergency_call"
+        android:textStyle="bold"
+        android:textSize="25sp"
+
+        android:textColor="@color/white"
+        android:onClick="callemer"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        app:icon="@drawable/ic_baseline_call_24"
+        android:backgroundTint="#D30829"
+        />
+</LinearLayout>

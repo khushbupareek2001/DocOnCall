@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "556088175980",
+    "project_id": "doc-on-call-f8353",
+    "storage_bucket": "doc-on-call-f8353.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556088175980:android:3d9616becc0c6721e99749",
+        "android_client_info": {
+          "package_name": "com.example.doconcall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556088175980-a1qijfp3essatlv7cflviu8mn49rdchq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-fGuqQdUK7rFi4oUfnrb0UNGwUL8yjuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556088175980-a1qijfp3essatlv7cflviu8mn49rdchq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
